@@ -113,7 +113,7 @@ flowchart LR
 
 > Nombre del proyecto y una frase que describa el problema. Extensión: breve.
 
-
+Las construcciones enfrentan problemas por el desorden en los pagos a sus trabajadores, y la verificación del trabajo hecho, este problema se traslada a las obras incluso familiares.
 
 ### Equipo y roles
 
