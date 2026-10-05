@@ -128,25 +128,15 @@ flowchart LR
 
 ### Problema y evidencia
 
-> **En la construcción, la plata sale antes de que alguien pueda verificar el trabajo.** Anticipos, actas de avance y pagos por etapas se mueven sin un registro común de qué se acordó, qué se hizo y qué se pagó, desde un contrato público hasta la remodelación de una casa.
+> **En la construcción, la plata sale antes de que alguien pueda verificar el trabajo.** Anticipos, actas de avance y pagos por etapas se mueven sin un registro común de qué se acordó, qué se hizo y qué se pagó.
 
-**En cifras:**
+**Contexto.** La construcción funciona con plata adelantada. Toda obra, del puente municipal al baño de una casa, arranca con un anticipo y se paga por etapas contra un avance que nadie comprueba por su cuenta: el contratista reporta, el interventor firma un acta y el banco solo ve transferencias. Una industria de **USD 16,45 billones** al año en el mundo y **USD 1,14 billones** en Latinoamérica, y entre el **10 % y el 30 %** del valor de cada contrato de infraestructura se pierde por mala gestión y corrupción (CoST).
 
-| | Cifra | Fuente |
-|:-:|---|---|
-| 🌎 | La construcción mueve **USD 16,45 billones** al año en el mundo (billones = millones de millones) y **USD 1,14 billones** en Latinoamérica | Estudios de mercado, 2025 |
-| 💸 | Entre el **10 % y el 30 %** del valor de un contrato de infraestructura se pierde por mala gestión y corrupción | CoST |
-| ⏳ | En EE. UU., los pagos lentos le costaron a la construcción **USD 299.000 millones** en 2025 | Rabbet, 2025 |
-| ⚖️ | Una disputa de construcción promedio ya vale **más de USD 60 millones** | Arcadis, 2024 |
-| 🇨🇴 | En Colombia hay **1.970 obras públicas inconclusas o críticas** que comprometen **USD 16.400 millones** | Contraloría |
+**Frecuencia y alcance.** No es la excepción: es cada contrato. En 2025, Colombia firmó **9.806 contratos de obra pública por USD 5.500 millones**, y **4.456 (USD 250 millones)** arrancaron con un anticipo que la ley no obliga a proteger. El costo ya se ve: **1.970 obras inconclusas o críticas por USD 16.400 millones**, 134 irrecuperables (Contraloría). Y el patrón baja hasta la casa: una familia perdió **USD 6.850** con un maestro que nunca terminó (Séptimo Día).
 
-**Frecuencia y alcance.** Pasa en cada obra que arranca con un anticipo. En 2025, la obra pública colombiana firmó **9.806 contratos por USD 5.500 millones**, y **4.456 (USD 250 millones) no tenían que proteger el anticipo** con fiducia. En una remodelación el patrón es idéntico: una familia perdió **USD 6.850** con un maestro que nunca terminó (Séptimo Día).
+**Afuera pasa igual.** Los pagos lentos costaron **USD 299.000 millones** a la construcción de EE. UU. en 2025 (Rabbet), y una disputa promedio ya supera los **USD 60 millones** (Arcadis).
 
-**Por qué le importa a Stellar:**
-
-- 💵 **Flujo de fondos.** Cada obra es una cadena de pagos recurrente (anticipo, hitos y saldo) entre partes que no confían entre sí.
-- 🔌 **Integraciones.** La plata entra y sale en pesos por anchors que ya operan en Colombia (MoneyGram, Bitso) y se apoya en piezas del Integration Track del SCF, como Trustless Work.
-- 🧰 **Herramienta para otros desarrolladores.** Comprobar el avance de un trabajo físico es una pieza que no existe en la red; marketplaces, plataformas inmobiliarias y de financiación por hitos podrían reutilizarla.
+**Por qué le importa a Stellar.** Cada obra es una cadena de pagos recurrente (anticipo, hitos y saldo) entre partes que no confían. La plata entra y sale en pesos por anchors activos en Colombia (MoneyGram, Bitso) y se apoya en piezas del SCF como Trustless Work. Y verificar el avance de un trabajo físico es una pieza que falta en la red, reutilizable por otros desarrolladores.
 
 ### Usuario y actores
 
