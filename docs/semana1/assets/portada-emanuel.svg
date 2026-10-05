@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220" role="img" aria-label="Entregable 1, Identificar: cuatro problemas">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF7F0"/>
+      <stop offset="1" stop-color="#F2E7D6"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #3A3530; }
+    .k { font-size: 12px; font-weight: 700; letter-spacing: .14em; fill: #9A7B5C; }
+    .h { font-size: 30px; font-weight: 700; }
+    .s { font-size: 15px; fill: #6B625A; }
+    .c { font-size: 14px; font-weight: 600; }
+    .n { font-size: 12px; font-weight: 700; fill: #FFFFFF; }
+  </style>
+  <rect x="1" y="1" width="898" height="218" rx="20" fill="url(#bg)" stroke="#EADFCF"/>
+  <text x="36" y="46" class="k">BLOCKCHAIN BUILDERS 101 · BAF · MÓDULO 1</text>
+  <text x="36" y="86" class="h">Entregable 1 · Identificar</text>
+  <text x="36" y="114" class="s">Dos problemas reales, contados desde quien los sufre</text>
+
+  <rect x="36" y="146" width="408" height="44" rx="22" fill="#FFFFFF" stroke="#EADFCF"/>
+  <circle cx="58" cy="168" r="12" fill="#C8775A"/><text x="58" y="172.5" class="n" text-anchor="middle">1</text>
+  <text x="78" y="173" class="c">Liquidar activos sin exponer la operación</text>
+
+  <rect x="456" y="146" width="408" height="44" rx="22" fill="#FFFFFF" stroke="#EADFCF"/>
+  <circle cx="478" cy="168" r="12" fill="#D4A85A"/><text x="478" y="172.5" class="n" text-anchor="middle">2</text>
+  <text x="498" y="173" class="c">Anticipos de obra sin garantía</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 290" width="900" height="290" role="img" aria-label="Recorrido actual de una remodelación: el dueño arriesga el anticipo y el maestro arriesga su trabajo">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#B59C80"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #3A3530; }
+    .k { font-size: 12px; font-weight: 700; letter-spacing: .14em; fill: #9A7B5C; }
+    .b { font-size: 14px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #6B625A; }
+    .ln { stroke: #B59C80; stroke-width: 2; fill: none; }
+  </style>
+  <rect x="1" y="1" width="898" height="288" rx="18" fill="#FBF7F0" stroke="#EADFCF"/>
+  <text x="36" y="44" class="k">HOY, CADA UNO CARGA CON EL RIESGO DEL OTRO</text>
+
+  <rect x="36"  y="64" width="195" height="72" rx="12" fill="#F1E7D8" stroke="#E2D3BD"/>
+  <rect x="247" y="64" width="195" height="72" rx="12" fill="#F1E7D8" stroke="#E2D3BD"/>
+  <rect x="458" y="64" width="195" height="72" rx="12" fill="#F1E7D8" stroke="#E2D3BD"/>
+  <rect x="669" y="64" width="195" height="72" rx="12" fill="#F1E7D8" stroke="#E2D3BD"/>
+  <g text-anchor="middle">
+    <text x="133" y="94" class="b">1 · Acuerdo</text>
+    <text x="133" y="116" class="s">de palabra o por WhatsApp</text>
+    <text x="344" y="94" class="b">2 · Anticipo</text>
+    <text x="344" y="116" class="s">se paga antes de ver avance</text>
+    <text x="555" y="94" class="b">3 · Obra por etapas</text>
+    <text x="555" y="116" class="s">pagos basados en confianza</text>
+    <text x="766" y="94" class="b">4 · Saldo final</text>
+    <text x="766" y="116" class="s">se cobra después de trabajar</text>
+  </g>
+  <line x1="232" y1="100" x2="244" y2="100" class="ln" marker-end="url(#a)"/>
+  <line x1="443" y1="100" x2="455" y2="100" class="ln" marker-end="url(#a)"/>
+  <line x1="654" y1="100" x2="666" y2="100" class="ln" marker-end="url(#a)"/>
+
+  <line x1="344" y1="137" x2="344" y2="170" stroke="#C8775A" stroke-width="1.6" stroke-dasharray="4 4"/>
+  <line x1="766" y1="137" x2="766" y2="170" stroke="#C8775A" stroke-width="1.6" stroke-dasharray="4 4"/>
+  <rect x="204" y="170" width="280" height="58" rx="12" fill="#F7E6DC" stroke="#C8775A" stroke-width="1.4"/>
+  <rect x="584" y="170" width="280" height="58" rx="12" fill="#F7E6DC" stroke="#C8775A" stroke-width="1.4"/>
+  <g text-anchor="middle">
+    <text x="344" y="194" class="b">⚠️ Riesgo de la familia</text>
+    <text x="344" y="215" class="s">si el maestro se va, pierde el anticipo</text>
+    <text x="724" y="194" class="b">⚠️ Riesgo del maestro</text>
+    <text x="724" y="215" class="s">si la familia no paga, pierde su trabajo</text>
+  </g>
+
+  <text x="450" y="264" class="s" text-anchor="middle">Si algo falla: denuncia o demanda que puede tardar años. La fiducia existe, pero es cara para una obra pequeña.</text>
+</svg>
