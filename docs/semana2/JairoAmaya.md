@@ -6,37 +6,37 @@
 
 ---
 
-<p align="center"><img src="assets/portada-jairo.svg" width="100%" alt="Entregable 2, Diseñar: siete historias de usuario"></p>
+<p align="center"><img src="assets/portada-jairo.svg" width="100%" alt="Entregable 2, Diseñar: siete historias de usuario para dos problemas"></p>
 
-Parto del problema que traje en la semana 1: **quien presta, compra o invierte en un activo físico no tiene cómo comprobar desde lejos que existe, que es de quien dice y que está como se lo cuentan**. Tomo el ganado como caso principal porque es donde más duele hoy, pero las mismas historias aplican a un panel solar financiado en zona rural o a una casa.
+Trabajamos con los dos problemas que trajo Emanuel en la semana 1: **liquidar activos sin exponer la operación** y **anticipos de obra sin garantía**. Parecen de mundos distintos, pero tienen el mismo nudo: dos partes que no se tienen confianza y una plata que solo debería moverse cuando cada una cumple lo suyo.
 
-Escribí una historia por cada persona que aparece en ese recorrido: quien tiene el activo, quien da fe de lo que le pasa y quienes tienen que confiar en él sin haberlo visto.
+Escribí historias desde los dos lados de cada intercambio y desde quien tiene que vigilar que todo sea limpio.
 
-<p align="center"><img src="assets/hu-roles.svg" width="100%" alt="Quién escribe y quién consulta el historial del activo: ganadero y veterinario escriben; banco, otro prestamista, frigorífico, inversionista y aseguradora consultan"></p>
+<p align="center"><img src="assets/hu-mapa.svg" width="100%" alt="En los dos problemas hay dos partes que no confían entre sí y un pago que solo debería moverse cuando se cumple lo acordado"></p>
 
 ---
 
 ## Mis historias de usuario
 
-1. Como **ganadero** quiero **registrar cada animal con su chapeta, sus vacunas y sus movimientos en un solo historial** para **poder usar mi ganado como garantía de un crédito formal sin que me pidan una visita cada vez**.
-2. Como **analista de crédito de un banco o una cooperativa** quiero **consultar desde la oficina el historial verificado de los animales que me ofrecen en garantía** para **aprobar el crédito con datos y no solo por confianza en el cliente**.
-3. Como **entidad que presta** quiero **saber si un animal ya está respaldando otro crédito** para **no financiar dos veces el mismo activo**.
-4. Como **veterinario que atiende la finca** quiero **firmar cada vacunación y cada revisión desde el celular** para **que mi registro sirva como evidencia y nadie lo pueda cambiar después**.
-5. Como **frigorífico que exporta carne** quiero **comprobar de qué finca viene cada animal, con sus coordenadas** para **demostrarle al comprador europeo que la carne no sale de tierra deforestada**.
-6. Como **persona que invierte poco en un proyecto productivo** quiero **ver el estado real del activo que respalda mi inversión** para **confiar en que existe y está como me lo cuentan**.
-7. Como **aseguradora agropecuaria** quiero **recibir un aviso cuando un animal asegurado muere, se enferma o sale de la finca** para **pagar o rechazar un reclamo con evidencia y no con la palabra de una sola parte**.
+1. Como **familia que va a remodelar** quiero **dejar la plata de la obra en una garantía que solo se libera cuando yo apruebe cada etapa** para **no perder el anticipo si el maestro no cumple**.
+2. Como **maestro de obra** quiero **ver que la plata del cliente ya está depositada y bloqueada antes de empezar** para **trabajar tranquilo, sabiendo que me van a pagar cada etapa que entregue**.
+3. Como **familia o maestro** quiero **que lo que acordamos (etapas, montos, fechas y fotos del avance) quede registrado sin que nadie lo pueda cambiar** para **tener cómo probar lo que pasó si terminamos peleando**.
+4. Como **mediador que las dos partes escogieron** quiero **revisar la evidencia de una etapa en disputa y decidir si la plata va para el maestro o vuelve a la familia** para **resolver el conflicto en días y no en años de juicio**.
+5. Como **gestor de un fondo que vende facturas o bonos tokenizados** quiero **liquidar la venta en un solo paso, activo contra pago, en segundos y a cualquier hora** para **no depender de la cadena de intermediarios ni esperar días con la plata quieta**.
+6. Como **tesorero de una empresa que compra esos activos** quiero **que el precio y el monto de mi operación no queden a la vista del mercado** para **que la competencia no copie mi estrategia ni se adelante a mis movimientos**.
+7. Como **auditor o supervisor** quiero **poder ver, con permiso, el detalle de las operaciones confidenciales** para **verificar que todo cumple la norma sin que esa información sea pública**.
 
-### Vistas por rol
+### Vistas por problema
 
-| # | Rol | Lo que quiere hacer | Lo que gana | Pregunta de la semana 1 que responde |
-|:-:|---|---|---|---|
-| 1 | 🐄 Ganadero | Llevar un historial único de cada animal | Crédito formal con su ganado como garantía | ¿Es de quien dice? |
-| 2 | 🏦 Banco o cooperativa | Consultar el historial desde la oficina | Decidir con datos, sin viajar | ¿Existe? |
-| 3 | 🔎 Otro prestamista | Ver si el animal ya está comprometido | No prestar dos veces sobre lo mismo | ¿Ya está comprometido con otro? |
-| 4 | 🩺 Veterinario | Firmar vacunas y revisiones | Que su palabra valga como prueba | ¿En qué estado está? |
-| 5 | 🥩 Frigorífico exportador | Comprobar el origen con coordenadas | Seguir vendiéndole a Europa (EUDR) | ¿De dónde viene? |
-| 6 | 🌱 Inversionista pequeño | Ver el estado del activo que lo respalda | Invertir sin tener que creer a ciegas | ¿Existe y está bien? |
-| 7 | 🛡️ Aseguradora | Recibir avisos de muerte, enfermedad o salida | Resolver reclamos con evidencia | ¿Qué le pasó y cuándo? |
+| # | Problema | Rol | El riesgo que le quitamos | Criterio de la Sesión 1 |
+|:-:|:-:|---|---|---|
+| 1 | 🧱 Obra | 🏠 Familia | Perder el anticipo | 🤝 Partes que no confían entre sí |
+| 2 | 🧱 Obra | 👷 Maestro | Trabajar semanas y no cobrar | 🤝 Partes que no confían entre sí |
+| 3 | 🧱 Obra | 🏠👷 Ambos | Que sea un chat contra otro chat | 🔒 Histórico inalterable |
+| 4 | 🧱 Obra | ⚖️ Mediador | Decidir sin pruebas | ✂️ Reemplaza a la fiducia que no está al alcance |
+| 5 | 📈 Liquidación | 📈 Fondo vendedor | Días de espera y una comisión por eslabón | ✂️ Un intermediario que concentra la confianza |
+| 6 | 📈 Liquidación | 💼 Tesorero comprador | Que el mercado vea su jugada | 🤝 Partes que no confían entre sí |
+| 7 | 📈 Liquidación | 🔍 Auditor | Que la privacidad tape el cumplimiento | 🔒 Histórico inalterable |
 
 ---
 
@@ -44,12 +44,12 @@ Escribí una historia por cada persona que aparece en ese recorrido: quien tiene
 
 | Orden de importancia | Historia # | Por qué |
 | :---: | :---: | --- |
-| 1 (la más importante) | 1 | Todo arranca aquí. Si el ganadero no registra a sus animales, no hay historial que nadie pueda consultar. Además es quien más gana: hoy se queda sin crédito formal porque no puede demostrar lo que tiene. |
-| 2 | 3 | Es la pregunta que hoy nadie puede responder: si ese animal ya respalda otro crédito. Es justo donde un registro compartido le gana a que cada entidad tenga su propia hoja de cálculo. |
-| 3 | 2 | El banco es quien pone la plata. Si no puede consultar y confiar en el historial desde lejos, el ganadero sigue sin crédito aunque haya registrado todo. |
-| 4 | 4 | Resuelve la parte más difícil que dejé anotada en la semana 1: la última milla. Lo que registra el ganadero solo vale si alguien independiente, como el veterinario, da fe de que pasó. |
-| 5 | 5 | Tiene fecha: desde el 30 de diciembre de 2026 Europa exige demostrar que la carne no viene de tierra deforestada. Es urgente, pero depende de que las historias 1 y 4 ya funcionen. |
-| 6 | 6 | Abre la puerta a que muchas personas financien proyectos pequeños en el campo, pero primero hay que demostrar que el historial es confiable para quienes ya prestan. |
-| 7 (la menos importante) | 7 | Suma valor, pero el seguro agropecuario llega a pocos ganaderos y la aseguradora puede seguir usando sus peritos mientras tanto. Es un paso posterior. |
+| 1 (la más importante) | 1 | Es el dolor más concreto y más cercano: familias que pierden millones y luego siguen pagando arriendo. Si la plata queda en garantía y solo sale cuando la familia aprueba, el problema central desaparece. |
+| 2 | 2 | Es la otra mitad de la misma garantía. Si el maestro no ve la plata bloqueada antes de empezar, no tiene motivo para aceptar el sistema y no hay producto. |
+| 3 | 5 | Es el corazón del problema de liquidación: activo contra pago en un solo paso y sin intermediarios. Va después de la obra porque toca el mercado de valores, que tiene más reglas. |
+| 4 | 6 | Sin confidencialidad, un fondo no se mueve a una red pública. Ya existen las piezas en Stellar (tokens confidenciales), pero siguen en etapa de prueba, por eso no va más arriba. |
+| 5 | 3 | Es lo que convierte la garantía en prueba. Hace falta, pero se construye casi solo cuando ya existen las historias 1 y 2. |
+| 6 | 4 | Las disputas van a pasar, pero no en cada obra. Al principio se pueden resolver con un acuerdo simple antes de tener un flujo de mediación completo. |
+| 7 (la menos importante) | 7 | Es clave para salir a producción con fondos regulados, pero en una demostración en testnet no la necesitamos. |
 
-> 🔍 **Lo que todavía tengo que validar:** si el ganadero estaría dispuesto a registrar cada animal (cuánto tiempo le toma y quién lo haría en la finca), y si un banco aceptaría como evidencia un historial firmado por un veterinario en vez de su propia visita.
+> 🔍 **Lo que todavía tengo que validar:** si un maestro de obra aceptaría cobrar desde una billetera (aunque reciba pesos al final), y si un fondo que hoy liquida con Deceval movería aunque sea una parte de su operación a una red pública con privacidad.
