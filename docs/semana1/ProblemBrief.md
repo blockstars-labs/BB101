@@ -23,6 +23,7 @@ Lo que inclinó la balanza:
 - **Cumple los tres criterios.** La familia y el maestro casi nunca se conocen de antes. El único intermediario que podría dar confianza, la fiducia, no está al alcance de una obra pequeña. Y cuando hay pelea, nadie puede probar qué se acordó, qué se hizo y qué se pagó.
 - **El dolor es fuerte y muy humano.** De un lado están los ahorros de una familia; del otro, semanas de trabajo de un maestro y su cuadrilla.
 - **Lo podemos validar ya.** Familias que remodelan y maestros de obra están en nuestro círculo cercano, y conocemos el sector por nuestra investigación sobre transformación digital en la construcción.
+- **Es una pieza de algo más grande.** Este problema es un micro componente de [Octoul](https://octoul.lat), nuestro proyecto de BIM y blockchain para verificar el avance de las obras, en el que ya hicimos validación y tenemos tracción en el sector. Resolverlo en una remodelación pequeña nos permite probar con familias y maestros lo que después escala a obras más grandes.
 
 Calificamos los cuatro problemas con siete criterios ponderados (de 1 a 5):
 
@@ -72,7 +73,7 @@ quadrantChart
 
 Anticipos de obra cae en **apuestas seguras**: genera interés y es abordable en el tiempo del bootcamp.
 
-> ⚠️ **Lo que tenemos que vigilar:** es el problema con menos diferencia frente a lo que ya existe (2 de 5), porque en Stellar ya hay proyectos alrededor de pagos condicionados. Por eso nuestro foco estará en quien sufre el problema: familias y maestros de obra que no saben, ni tienen por qué saber, de tecnología.
+> ⚠️ **Lo que tenemos que vigilar:** es el problema con menos diferencia frente a lo que ya existe (2 de 5), porque en Stellar ya hay proyectos alrededor de pagos condicionados. Por eso nuestro foco estará en quien sufre el problema: familias y maestros de obra que no saben, ni tienen por qué saber, de tecnología. Ahí nos ayuda lo que ya aprendimos del sector con Octoul.
 
 ### Propuestas descartadas
 
@@ -84,7 +85,7 @@ Anticipos de obra cae en **apuestas seguras**: genera interés y es abordable en
 
 ### Cómo tomamos la decisión
 
-Elegimos **por consenso**, apoyados en dos métodos de selección (el **análisis de decisiones multicriterio** y la **matriz de interés vs. dificultad**) y en nuestra **experiencia construyendo en la red de Stellar**.
+Elegimos **por consenso**, apoyados en dos métodos de selección (el **análisis de decisiones multicriterio** y la **matriz de interés vs. dificultad**), en nuestra **experiencia construyendo en la red de Stellar** y en que el problema es un **micro componente de Octoul**, un proyecto más grande con validación y tracción en el sector.
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {"fontFamily": "Inter, Helvetica, Arial, sans-serif", "primaryColor": "#F6F7F8", "primaryBorderColor": "#0F0F0F", "primaryTextColor": "#0F0F0F", "lineColor": "#8C8C8C"}}}%%
@@ -93,7 +94,7 @@ flowchart LR
     B --> C["Nota de 1 a 5<br/>por criterio"]
     C --> D["Segundo escenario<br/>para probar el resultado"]
     D --> E["Matriz de interés<br/>vs. dificultad"]
-    E --> F["Consenso: métodos +<br/>experiencia en Stellar"]
+    E --> F["Consenso: métodos, experiencia<br/>en Stellar y encaje con Octoul"]
     classDef win fill:#FDDA24,stroke:#0F0F0F,color:#0F0F0F
     class F win
 ```
@@ -103,7 +104,7 @@ flowchart LR
 3. **Calificamos cada problema de 1 a 5** en cada criterio y calculamos el puntaje ponderado.
 4. **Probamos un segundo escenario**, con más peso para Stellar y la diferenciación, para ver si el ganador cambiaba. No cambió.
 5. **Ubicamos los cuatro en la matriz** de interés vs. dificultad.
-6. **Revisamos el resultado juntos** y, sumando nuestra experiencia en la red de Stellar, elegimos por consenso Anticipos de obra, con Gastos de terreno como plan B.
+6. **Revisamos el resultado juntos** y, sumando nuestra experiencia en la red de Stellar y el encaje con Octoul, elegimos por consenso Anticipos de obra, con Gastos de terreno como plan B.
 
 ---
 
