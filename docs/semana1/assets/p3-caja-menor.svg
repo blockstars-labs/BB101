@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 286" width="900" height="286" role="img" aria-label="Recorrido actual de un gasto de terreno, desde el efectivo hasta el donante, con los puntos donde se rompe">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#B59C80"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #3A3530; }
+    .k { font-size: 12px; font-weight: 700; letter-spacing: .14em; fill: #9A7B5C; }
+    .b { font-size: 14px; font-weight: 700; }
+    .m { font-size: 13px; }
+    .s { font-size: 12.5px; fill: #6B625A; }
+    .ln { stroke: #B59C80; stroke-width: 2; fill: none; }
+  </style>
+  <rect x="1" y="1" width="898" height="284" rx="18" fill="#FBF7F0" stroke="#EADFCF"/>
+  <text x="36" y="44" class="k">EL RECORRIDO DE UN GASTO DE TERRENO, HOY</text>
+
+  <rect x="36"  y="64" width="152" height="68" rx="12" fill="#E4ECE3" stroke="#C9D6C6"/>
+  <rect x="205" y="64" width="152" height="68" rx="12" fill="#F1E7D8" stroke="#E2D3BD"/>
+  <rect x="374" y="64" width="152" height="68" rx="12" fill="#F1E7D8" stroke="#E2D3BD"/>
+  <rect x="543" y="64" width="152" height="68" rx="12" fill="#F1E7D8" stroke="#E2D3BD"/>
+  <rect x="712" y="64" width="152" height="68" rx="12" fill="#E4ECE3" stroke="#C9D6C6"/>
+  <g text-anchor="middle">
+    <text x="112" y="93" class="b">Fundación</text>
+    <text x="112" y="114" class="s">entrega efectivo</text>
+    <text x="281" y="93" class="b">Quien compra</text>
+    <text x="281" y="114" class="s">paga sin factura</text>
+    <text x="450" y="93" class="b">Recibo en papel</text>
+    <text x="450" y="114" class="s">foto por WhatsApp</text>
+    <text x="619" y="93" class="b">Contador</text>
+    <text x="619" y="114" class="s">reconstruye soportes</text>
+    <text x="788" y="93" class="b">Donante</text>
+    <text x="788" y="114" class="s">revisa y decide</text>
+  </g>
+  <line x1="189" y1="98" x2="202" y2="98" class="ln" marker-end="url(#a)"/>
+  <line x1="358" y1="98" x2="371" y2="98" class="ln" marker-end="url(#a)"/>
+  <line x1="527" y1="98" x2="540" y2="98" class="ln" marker-end="url(#a)"/>
+  <line x1="696" y1="98" x2="709" y2="98" class="ln" marker-end="url(#a)"/>
+
+  <g stroke="#C8775A" stroke-width="1.6" stroke-dasharray="4 4">
+    <line x1="450" y1="133" x2="450" y2="168"/>
+    <line x1="619" y1="133" x2="619" y2="168"/>
+    <line x1="788" y1="133" x2="788" y2="168"/>
+  </g>
+  <rect x="373" y="168" width="154" height="36" rx="18" fill="#F7E6DC" stroke="#C8775A" stroke-width="1.4"/>
+  <rect x="542" y="168" width="154" height="36" rx="18" fill="#F7E6DC" stroke="#C8775A" stroke-width="1.4"/>
+  <rect x="713" y="168" width="150" height="36" rx="18" fill="#F7E6DC" stroke="#C8775A" stroke-width="1.4"/>
+  <g class="m" text-anchor="middle">
+    <text x="450" y="191">🧾 se pierde o no se lee</text>
+    <text x="619" y="191">⏱️ horas de trabajo</text>
+    <text x="788" y="191">💸 gasto rechazado</text>
+  </g>
+
+  <text x="450" y="254" class="s" text-anchor="middle">Al final, la fundación paga con recursos propios lo que no logra demostrar.</text>
+</svg>

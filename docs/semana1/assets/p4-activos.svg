@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="Entre la finca y quien financia solo llegan fotos, papeles y visitas ocasionales; quedan preguntas sin respuesta confiable">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#B59C80"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #3A3530; }
+    .k { font-size: 12px; font-weight: 700; letter-spacing: .14em; fill: #9A7B5C; }
+    .b { font-size: 14px; font-weight: 700; }
+    .m { font-size: 13px; }
+    .q { font-size: 13px; font-weight: 600; }
+    .s { font-size: 12.5px; fill: #6B625A; }
+  </style>
+  <rect x="1" y="1" width="898" height="298" rx="18" fill="#FBF7F0" stroke="#EADFCF"/>
+  <text x="36" y="44" class="k">LO QUE NO SE PUEDE COMPROBAR A DISTANCIA</text>
+
+  <line x1="208" y1="122" x2="690" y2="122" stroke="#B59C80" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#a)"/>
+
+  <rect x="36" y="68" width="172" height="108" rx="12" fill="#E4ECE3" stroke="#C9D6C6"/>
+  <text x="122" y="114" class="b" text-anchor="middle">🐄 La finca</text>
+  <text x="122" y="136" class="s" text-anchor="middle">donde está el activo</text>
+
+  <rect x="692" y="68" width="172" height="108" rx="12" fill="#E4ECE3" stroke="#C9D6C6"/>
+  <text x="778" y="106" class="b" text-anchor="middle">🏦 Quien financia</text>
+  <text x="778" y="126" class="b" text-anchor="middle">o compra</text>
+  <text x="778" y="148" class="s" text-anchor="middle">lejos de la finca</text>
+
+  <g>
+    <rect x="335" y="74" width="230" height="28" rx="14" fill="#FFFFFF" stroke="#E2D3BD"/>
+    <rect x="335" y="108" width="230" height="28" rx="14" fill="#FFFFFF" stroke="#E2D3BD"/>
+    <rect x="335" y="142" width="230" height="28" rx="14" fill="#FFFFFF" stroke="#E2D3BD"/>
+  </g>
+  <g class="m" text-anchor="middle">
+    <text x="450" y="93">📷 fotos por WhatsApp</text>
+    <text x="450" y="127">📄 papeles y guías del ICA</text>
+    <text x="450" y="161">🚙 una visita de vez en cuando</text>
+  </g>
+
+  <text x="36" y="206" class="s">Preguntas sin respuesta confiable</text>
+  <rect x="36"  y="216" width="120" height="34" rx="17" fill="#F7E6DC" stroke="#C8775A" stroke-width="1.4"/>
+  <rect x="168" y="216" width="176" height="34" rx="17" fill="#F7E6DC" stroke="#C8775A" stroke-width="1.4"/>
+  <rect x="356" y="216" width="182" height="34" rx="17" fill="#F7E6DC" stroke="#C8775A" stroke-width="1.4"/>
+  <rect x="550" y="216" width="314" height="34" rx="17" fill="#F7E6DC" stroke="#C8775A" stroke-width="1.4"/>
+  <g class="q" text-anchor="middle">
+    <text x="96"  y="238">¿Existe?</text>
+    <text x="256" y="238">¿Es de quien dice?</text>
+    <text x="447" y="238">¿En qué estado está?</text>
+    <text x="707" y="238">¿Ya está comprometido con otro?</text>
+  </g>
+
+  <text x="450" y="280" class="s" text-anchor="middle">El mismo problema aparece con ☀️ paneles solares financiados en zonas rurales y con 🏠 inmuebles.</text>
+</svg>
