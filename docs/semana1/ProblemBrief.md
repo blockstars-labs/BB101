@@ -113,7 +113,7 @@ flowchart LR
 
 > Nombre del proyecto y una frase que describa el problema. Extensión: breve.
 
-Escriban aquí su respuesta.
+
 
 ### Equipo y roles
 
