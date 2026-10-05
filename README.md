@@ -8,22 +8,22 @@ Parte de la plantilla [ProyectoBase](https://github.com/mestupinanm/ProyectoBase
 
 | Semana | Etapa | Estado |
 |:-:|---|---|
-| 1 | **Identificar** | 🟡 Cuatro problemas propuestos; el equipo está eligiendo uno para el Problem Brief |
-| 2 | Diseñar | ⚪ Pendiente |
+| 1 | **Identificar** | ✅ Problema elegido: **Anticipos de obra sin garantía** · [Problem Brief](docs/semana1/ProblemBrief.md) |
+| 2 | Diseñar | 🟡 En curso |
 | 3 | Construir | ⚪ Pendiente |
 | 4 | Integrar | ⚪ Pendiente |
 | 5 | Demostrar | ⚪ Pendiente |
 
-### Problemas en evaluación
+### Problemas evaluados
 
-| Problema | Lo propone | Ficha |
-|---|---|---|
-| Liquidar activos sin exponer la operación | Emanuel | [Ver](docs/semana1/EmanuelBenavides.md) |
-| Anticipos de obra sin garantía | Emanuel | [Ver](docs/semana1/EmanuelBenavides.md) |
-| Gastos de terreno que no se pueden demostrar | Jairo | [Ver](docs/semana1/JairoAmaya.md) |
-| Activos difíciles de comprobar a distancia | Jairo | [Ver](docs/semana1/JairoAmaya.md) |
+| Problema | Lo propuso | Resultado | Ficha |
+|---|---|---|---|
+| Liquidar activos sin exponer la operación | Emanuel | Descartado | [Ver](docs/semana1/EmanuelBenavides.md) |
+| **Anticipos de obra sin garantía** | Emanuel | ✅ **Elegido** | [Ver](docs/semana1/EmanuelBenavides.md) |
+| Gastos de terreno que no se pueden demostrar | Jairo | Plan B | [Ver](docs/semana1/JairoAmaya.md) |
+| Activos difíciles de comprobar a distancia | Jairo | Descartado | [Ver](docs/semana1/JairoAmaya.md) |
 
-La decisión y el Problem Brief del problema elegido quedarán en [docs/semana1/ProblemBrief.md](docs/semana1/ProblemBrief.md).
+Cómo lo elegimos y el Problem Brief completo están en [docs/semana1/ProblemBrief.md](docs/semana1/ProblemBrief.md).
 
 ## Equipo
 
@@ -62,6 +62,6 @@ We start where trust breaks down in Latin America. Our first week maps four prob
 - **Nonprofits:** field teams paying in cash to vendors who issue no invoice, and donors who cannot verify the spend.
 - **Agriculture:** lenders and buyers who cannot verify, from afar, that a physical asset like cattle exists and is in the state reported.
 
-We are now narrowing them down to one. Our individual write-ups (in Spanish, as the bootcamp requires) live in [`docs/semana1`](docs/semana1).
+We chose **construction advances**: families and contractors who each carry the risk of the other side not delivering, with no affordable guarantee and no shared record when things go wrong. How we decided, and the full Problem Brief (in Spanish, as the bootcamp requires), live in [`docs/semana1/ProblemBrief.md`](docs/semana1/ProblemBrief.md).
 
 **Team:** [Emanuel Benavides León](https://github.com/EmanuXBe) and [Jairo Enrique Amaya Celis](https://github.com/jairoamayac), builders from Colombia 🇨🇴.
