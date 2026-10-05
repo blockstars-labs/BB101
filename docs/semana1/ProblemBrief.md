@@ -128,17 +128,25 @@ flowchart LR
 
 ### Problema y evidencia
 
-> **Quien contrata una remodelación tiene que soltar plata antes de ver la obra, sin garantía de que el maestro la termine, y el maestro trabaja semanas sin garantía de que le paguen el saldo.**
+> **En la construcción, la plata sale antes de que alguien pueda verificar el trabajo.** Anticipos, actas de avance y pagos por etapas se mueven sin un registro común de qué se acordó, qué se hizo y qué se pagó, desde un contrato público hasta la remodelación de una casa.
 
-**Contexto.** En Colombia, buena parte de las remodelaciones de vivienda (terminar un apartamento entregado en obra gris, cambiar pisos, rehacer un baño o una cocina) las hace un maestro de obra contratado por recomendación, con un acuerdo de palabra o por WhatsApp, en un país donde el 55,1 % de las personas ocupadas es informal (DANE, junio de 2026).
+**En cifras:**
 
-**Frecuencia y alcance.** Pasa en cada remodelación que arranca con un anticipo, y el anticipo es la costumbre. Lo que llega a las autoridades es apenas la punta: la Superintendencia de Industria y Comercio registró **75 quejas** por incumplimiento en remodelaciones de vivienda entre enero de 2022 y mayo de 2026. Creemos que la mayoría de los casos nunca se denuncia, porque una queja o una demanda cuesta más tiempo y plata de lo que se perdió.
+| | Cifra | Fuente |
+|:-:|---|---|
+| 🌎 | La construcción mueve **USD 16,45 billones** al año en el mundo (billones = millones de millones) y **USD 1,14 billones** en Latinoamérica | Estudios de mercado, 2025 |
+| 💸 | Entre el **10 % y el 30 %** del valor de un contrato de infraestructura se pierde por mala gestión y corrupción | CoST |
+| ⏳ | En EE. UU., los pagos lentos le costaron a la construcción **USD 299.000 millones** en 2025 | Rabbet, 2025 |
+| ⚖️ | Una disputa de construcción promedio ya vale **más de USD 60 millones** | Arcadis, 2024 |
+| 🇨🇴 | En Colombia hay **1.970 obras públicas inconclusas o críticas** que comprometen **USD 16.400 millones** | Contraloría |
 
-**Evidencia.**
+**Frecuencia y alcance.** Pasa en cada obra que arranca con un anticipo. En 2025, la obra pública colombiana firmó **9.806 contratos por USD 5.500 millones**, y **4.456 (USD 250 millones) no tenían que proteger el anticipo** con fiducia. En una remodelación el patrón es idéntico: una familia perdió **USD 6.850** con un maestro que nunca terminó (Séptimo Día).
 
-- 📺 Un reportaje de **Séptimo Día** mostró familias en Bogotá y el Valle del Cauca con remodelaciones pagadas y sin terminar. Una entregó **28 millones de pesos** y apenas vio avance; otra seguía pagando arriendo un año después porque su casa no se podía habitar.
-- 🧑‍⚖️ En ese mismo reportaje, los expertos recomiendan que, **antes de dar cualquier anticipo**, se verifique al contratista y se exija una póliza de cumplimiento. Es decir, el anticipo es justo el punto donde se rompe la confianza.
-- 🏠 **Experiencia cercana:** en nuestro círculo hay familias que han remodelado y maestros de obra que han trabajado sin garantía de pago. Esta semana los entrevistamos para medir qué tan seguido pasa y cuánto se pierde.
+**Por qué le importa a Stellar:**
+
+- 💵 **Flujo de fondos.** Cada obra es una cadena de pagos recurrente (anticipo, hitos y saldo) entre partes que no confían entre sí.
+- 🔌 **Integraciones.** La plata entra y sale en pesos por anchors que ya operan en Colombia (MoneyGram, Bitso) y se apoya en piezas del Integration Track del SCF, como Trustless Work.
+- 🧰 **Herramienta para otros desarrolladores.** Comprobar el avance de un trabajo físico es una pieza que no existe en la red; marketplaces, plataformas inmobiliarias y de financiación por hitos podrían reutilizarla.
 
 ### Usuario y actores
 
@@ -223,6 +231,54 @@ F1 y F2 están en el origen de las demás: como la plata se mueve sin que el ava
 
 Es una intuición, todavía no una certeza: la vamos a poner a prueba en las entrevistas de esta semana.
 
+### Tamaño del mercado
+
+> La remodelación de una familia es nuestro laboratorio: tiene el mismo patrón (anticipo, avance por etapas y pago contra lo hecho) a una escala que podemos validar en cinco semanas. **El mercado es la contratación de obra**: todo proyecto de construcción en el que la plata se entrega antes de poder verificar el trabajo.
+
+```mermaid
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Inter, Helvetica, Arial, sans-serif", "primaryColor": "#F6F7F8", "primaryBorderColor": "#0F0F0F", "primaryTextColor": "#0F0F0F", "lineColor": "#8C8C8C"}}}%%
+flowchart TD
+    TAM["TAM · USD 1,14 billones al año<br/>construcción en Latinoamérica"] --> SAM["SAM · USD 5.500 millones al año<br/>9.806 contratos de obra pública en Colombia"]
+    SAM --> ENT["Segmento de entrada · USD 514 millones al año<br/>8.158 contratos de obra pública pequeña"]
+    ENT --> SOM["SOM · USD 25,7 millones al año<br/>408 contratos en tres años"]
+    classDef tam fill:#D6D2C4,stroke:#0F0F0F,color:#0F0F0F
+    classDef sam fill:#B7ACE8,stroke:#0F0F0F,color:#0F0F0F
+    classDef som fill:#FDDA24,stroke:#0F0F0F,color:#0F0F0F
+    class TAM tam
+    class SAM,ENT sam
+    class SOM som
+```
+
+| Nivel | Qué incluye | Tamaño | Por qué cuenta |
+|---|---|---|---|
+| 🌎 **TAM** | Toda la construcción en Latinoamérica: edificaciones, vías, obras civiles y remodelaciones | **USD 1,14 billones** al año | En toda obra el pago va por delante de la verificación. Solo Colombia aporta **USD 19.100 millones** de valor agregado, el 4,2 % de su PIB |
+| 🏛️ **SAM** | La obra pública contratada en Colombia a través de SECOP II | **USD 5.500 millones** en **9.806 contratos** firmados en 2025 | La ley ya exige trazabilidad (fiducia para el anticipo, interventoría y actas de avance), y aun así falla |
+| 🧱 **Segmento de entrada** | Contratos de obra pública de hasta 1.000 salarios mínimos (unos USD 348.000) | **USD 514 millones** en **8.158 contratos**, el 83 % de los contratos de obra | Obras pequeñas, sobre todo municipales, donde una fiducia es desproporcionada o la ley ni siquiera la exige |
+| 🎯 **SOM** | El 5 % del segmento de entrada en tres años | **USD 25,7 millones** al año en unos **408 contratos** | Es el valor de obra que pasaría por la red: cada anticipo, hito y pago quedaría verificable |
+
+**El tamaño del dolor.** La Contraloría tiene identificadas **1.970 obras públicas inconclusas o críticas por USD 16.400 millones** (entre septiembre de 2022 y julio de 2026). De ellas, 1.029 por **USD 13.250 millones** siguen con problemas de ejecución y 134 por **USD 153 millones** ya se consideran irrecuperables. Si al gasto anual en obra pública le aplicamos el rango de pérdida de CoST (10 % a 30 %), entre **USD 550 y 1.650 millones** al año se irían solo en Colombia.
+
+**Por qué entramos por la obra pequeña.** La Ley 1474 de 2011 (art. 91) obliga a manejar el anticipo de los contratos de obra con una fiducia, **salvo en los de menor y mínima cuantía**. En 2025 esos contratos exentos fueron **4.456 por USD 250 millones**. Ahí el anticipo viaja sin respaldo, igual que en la remodelación de una familia, y un registro compartido y barato compite con una fiducia que cuesta más de lo que vale controlar una obra chica.
+
+**De la obra pequeña a Octoul.** Lo que probemos con anticipos e hitos en obras pequeñas es la base para verificar el avance de proyectos más grandes, donde la fiducia ya existe pero no ve la obra: controla en qué se gasta el anticipo, no si el trabajo se hizo.
+
+> ⚠️ **El SOM es una hipótesis.** El 5 % es una meta del equipo, no un dato: la vamos a contrastar con el modelo de negocio de la semana 2.
+
+<details>
+<summary><b>Cómo calculamos estas cifras</b></summary>
+
+- **Tasa de cambio.** Convertimos todas las cifras en pesos con la **TRM promedio de 2025: COP 4.088 por dólar** (Portafolio), porque los datos de base son de 2025. Es un criterio conservador: con la TRM del 5 de octubre de 2026 (COP 3.273) las cifras en dólares serían cerca de un 25 % más altas.
+- **TAM.** Tamaño del mercado de construcción en Latinoamérica en 2025, según Expert Market Research. Como referencia, el valor agregado de la construcción en Colombia en 2025 fue de COP 77,9 billones (DANE, cifra preliminar, vía El Colombiano), unos USD 19.100 millones.
+- **SAM y segmento de entrada.** Base abierta *SECOP II, Contratos Electrónicos* (datos.gov.co), consultada el 5 de octubre de 2026: contratos con tipo "Obra" y fecha de firma en 2025. SAM: COP 22,5 billones. Segmento de entrada: COP 2,1 billones.
+  - Excluimos 32 contratos etiquetados como "Selección abreviada de menor cuantía sin manifestación de interés" por COP 669.500 millones (USD 164 millones), porque sus valores superan el tope legal de esa modalidad.
+  - Obra pequeña: hasta 1.000 salarios mínimos de 2025, es decir, COP 1.423.500.000, el tope de menor cuantía para las entidades más grandes.
+  - Contratos exentos de fiducia: 2.697 de menor cuantía por COP 932.806 millones (USD 228 millones) y 1.759 de mínima cuantía por COP 87.153 millones (USD 21 millones), filtrados con sus topes legales.
+  - Los contratos que todavía se registran en SECOP I quedan por fuera, así que estas cifras son un piso.
+- **SOM.** 5 % de los 8.158 contratos de obra pequeña y de sus USD 514 millones.
+- **Pérdida estimada.** Rango de CoST (10 % a 30 %) aplicado a los USD 5.500 millones de obra pública de 2025. Es una estimación de orden de magnitud, no una medición.
+
+</details>
+
 ### Criterio de pertinencia
 
 **¿Por qué no basta una base de datos o una app tradicional?** Porque la pregunta clave es **quién la controla**.
@@ -263,5 +319,15 @@ Siguiendo la regla de la Sesión 1, **en la red solo iría lo que varias partes 
 - Reportaje de Séptimo Día (Caracol Televisión) sobre remodelaciones pagadas y sin terminar, con cifras de la Superintendencia de Industria y Comercio (quejas entre enero de 2022 y mayo de 2026) y recomendaciones de expertos.
 - DANE, Gran Encuesta Integrada de Hogares, informalidad laboral a junio de 2026, vía [Portafolio](https://www.portafolio.co/economia/mientras-que-el-desempleo-en-colombia-baja-de-los-dos-digitos-la-informalidad-no-cede-del-491084).
 - Reparaciones locativas y licencias de construcción, Decreto 1077 de 2015 y Ley 810 de 2003, art. 8, según [concepto de la Curaduría Urbana 3 de Bogotá](https://curaduria3bogota.com/wp-content/uploads/2024/12/CONCEPTO-R23-3-0240.pdf).
+- DANE, Producto Interno Bruto 2025, aporte de la construcción, vía [El Colombiano](https://www.elcolombiano.com/negocios/pib-colombia-2025-valor-pesos-datos-dane-EG33602701), y variación del sector en el [boletín técnico del IV trimestre de 2025](https://www.dane.gov.co/files/operaciones/PIB/bol-PIB-IVtrim2025.pdf).
+- Mercado global de construcción 2025 (USD 16,45 billones), [ResearchAndMarkets vía Business Wire](https://www.businesswire.com/news/home/20251002308109/en/Construction-Industry-Report-2025-Global-Market-to-Reach-%2420.44-Trillion-in-2029-from-%2415.78-Trillion-in-2024---Long-term-Forecast-to-2034---ResearchAndMarkets.com), y mercado de construcción en Latinoamérica 2025, [Expert Market Research](https://www.expertmarketresearch.com/es/reports/latin-america-construction-market).
+- Pérdida del 10 % al 30 % del valor de los contratos de infraestructura, [Banco Mundial sobre CoST](https://www.worldbank.org/en/news/feature/2012/11/08/construction-sector-transparency-program-goes-global).
+- Costo de los pagos lentos en la construcción de EE. UU., [Rabbet, 2025 Construction Payments Report](https://rabbet.com/reports/construction-payments-2025).
+- Valor promedio de las disputas de construcción, Arcadis, vía [Pinsent Masons](https://www.pinsentmasons.com/out-law/news/arcadis-global-construction-value-disputes).
+- TRM promedio de 2025, [Portafolio](https://www.portafolio.co/economia/finanzas/precio-del-dolar-en-colombia-cerro-el-2025-en-3-757-marcado-por-la-revalorizacion-del-peso-local-485476).
+- Trustless Work en el Integration Track del SCF, [Trustless Work](https://www.trustlesswork.com/escrow-times/news-scf-integration-track).
+- Agencia Nacional de Contratación Pública (Colombia Compra Eficiente), [SECOP II, Contratos Electrónicos](https://www.datos.gov.co/Estad-sticas-Nacionales/SECOP-II-Contratos-Electr-nicos/jbjy-vk9h), contratos de obra firmados en 2025, consultado el 5 de octubre de 2026.
+- Ley 1474 de 2011, art. 91, sobre el manejo de anticipos con fiducia, en la [síntesis normativa de Colombia Compra Eficiente](https://sintesis.colombiacompra.gov.co/norma/LEY%201474%20DE%202011/258).
+- Contraloría General de la República, obras inconclusas y críticas entre septiembre de 2022 y julio de 2026, vía [Infobae](https://www.infobae.com/colombia/2026/07/12/colombia-acumula-1970-elefantes-blancos-por-67-billones-estas-son-las-obras-que-dejo-inconclusas-el-gobierno-petro/).
 
 </details>
